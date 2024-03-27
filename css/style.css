@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 body {
     width: 100%;
     font-family: "Rubik", "Arial", sans-serif;
@@ -37,5 +42,152 @@ a {
 }
 
 img {
+    display: block;
+}
+
+/* BUTTON */
+.button {
+    letter-spacing: 0.15px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-orange {
+    width: 111px;
+    height: 40px;
+    padding: 12px 32px;
+    line-height: 17px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: var(--link-color);
+}
+
+.button-orange:hover {
+    padding: 8px 28px;
+    border: 2px solid var(--link-color);
+    background: none;
+    color: var(--link-color);
+}
+
+.button-middle-blue {
+    width: 161px;
+    height: 48px;
+    padding: 10px 24px;
+    font-size: 14px;
+    letter-spacing: mixed;
+    line-height: 28px;
+    background-color: var(--button-color);
+}
+
+.button-middle-black {
+    background-color: #f7f7f7;
+    color: var(--title-color);
+}
+
+
+
+
+/* Header */
+.site-header__container {
+    padding-top: 48px;
+}
+
+.sitenav {
+    display: flex;
+    align-items: center;
+}
+
+.sitenav__logo {
+    margin-right: auto;
+}
+
+.sitenav__logo:hover {
+    opacity: 0.8;
+}
+
+.sitenav__logo:active {
+    opacity: 0.6;
+}
+
+.sitenav__logo-img {
+    width: 149px;
+    height: 25px;
+    display: block;
+}
+
+.sitenav__list {
+    display: flex;
+    margin-right: 48px;
+    list-style: none;
+}
+
+.sitenav__item {
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 46px;
+}
+
+.sitenav__link:hover {
+    color: var(--link-color);
+}
+
+.sitenav__link:active {
+    opacity: 0.8;
+}
+
+/* MAIN */
+.main-content {
+    flex-grow: 1;
+}
+
+/* HERO */
+.hero {
+    background-image: url(../img/bg-Rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.hero-container {
+    position: relative;
+    display: flex;
+}
+
+.hero__left {
+    width: 540px;
+    height: 292px;
+    margin-top: 179px;
+}
+
+.hero__left-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.15px;
+    color: var(--title-color);
+}
+
+.hero__left-text {
+    margin-top: 0;
+    margin-bottom: 32px;
+    letter-spacing: 0;
+}
+
+.hero__right {
+    position: absolute;
+    top: 108px;
+    left: calc(50% + 65px);
+}
+
+.hero__right-img {
     display: block;
 }
