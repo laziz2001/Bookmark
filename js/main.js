@@ -1,6 +1,10 @@
 const elQuestionAnswer = document.querySelector(".question__answer");
-const elQuestionTop = document.querySelector(".question__top");
+const elQuestion = document.querySelector(".question");
+const elQuestionTopImg = document.querySelector(".question__top-img");
 
-elQuestionTop.addEventListener("click", function () {
-  elQuestionAnswer.classList.toggle("question__answer-open");
-});
+if (elQuestion) {
+  elQuestion.addEventListener("click", function () {
+    elQuestionAnswer.classList.toggle("question__answer-open");
+    elQuestionTopImg.classList.toggle("js-question__top-img");
+  });
+}
